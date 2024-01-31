@@ -1,0 +1,74 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 25px solid;
+}
+
+caption {
+  font-size: 2.5em; /* Tamaño del texto del título */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Centrar el texto */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f2f2f2; /* Color de fondo */
+  border: 1px solid #333; /* Borde */
+}
+
+.cuadroTexto {
+  border: 2px solid #333; /* Borde */
+  padding: 8px; /* Espaciado interno */
+  margin: 10px 0; /* Margen superior e inferior */
+  text-align: center; /* Centrar el texto */
+  font-weight: bold; /* Negrita */
+  font-size: 1.5em; /* Tamaño del texto */
+}
+
+tr {
+  border: 1px solid;
+  height: 100px;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background: #FFFFFF;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+  background: #000;
+}
+
+td {
+  border: 1px solid;
+  width: 100px;
+  text-align: center;
+}
+
+body {
+  background-image: url('img/reina.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo para el botón */
+.boton-reiniciar {
+  background-color: #4CAF50; /* Color de fondo verde */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto blanco */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alinear texto al centro */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px; /* Margen exterior */
+  cursor: pointer; /* Cursor de tipo puntero */
+  border-radius: 8px; /* Bordes redondeados */
+  transition-duration: 0.4s; /* Duración de la transición */
+}
+
+/* Cambiar estilo al pasar el mouse sobre el botón */
+.boton-reiniciar:hover {
+  background-color: #7e9235; /* Color de fondo oscuro */
+  color: rgb(206, 41, 41); /* Color del texto blanco */
+}
